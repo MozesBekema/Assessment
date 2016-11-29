@@ -27,7 +27,7 @@
                     while($row = $wp->fetch(PDO::FETCH_ASSOC)){
                 ?>
                 <tr>
-                    <td class="mdl-data-table__cell--non-numeric" required><input name="<?php echo ($row['id']);?>" type="checkbox"><?php echo ($row['wp_name']);?></td>
+                    <td class="mdl-data-table__cell--non-numeric" name="<?php echo ($row['id']);?>" required><?php echo ($row['wp_name']);?></td>
                 </tr>
                 <?php
                     }
