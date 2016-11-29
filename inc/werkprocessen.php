@@ -19,7 +19,7 @@
             <form action="leerling.php" method="post">
                 <thead>
                     <tr>
-                        <th class="mdl-data-table__cell--non-numeric">Kies de werkprocessen voor </th>
+                        <th class="mdl-data-table__cell--non-numeric">Kies de werkprocessen voor hallo</th>
                     </tr>
                 </thead>
             <tbody>
