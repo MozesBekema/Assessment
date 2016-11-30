@@ -10,7 +10,8 @@
 
 </head>
 <body>
-    <header>
+    <a href="../index.php?action=logout">Log out</a>
+        <header>
             <form action="leerling.php" method="post" id="required">
                 <?php
                     while($row = $wp->fetch(PDO::FETCH_ASSOC)){
@@ -21,6 +22,6 @@
                 ?>
             <?php include("button.php")?>
             </form>
-    </header>
+        </header>
 </body>
 </html>

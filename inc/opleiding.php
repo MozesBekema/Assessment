@@ -14,7 +14,7 @@
     <a href="../index.php?action=logout">Log out</a>
     <header>
         <form action="klassen.php" method="post">
-            <select name="opleidingen">
+            <select name="opleiding_name">
                 <?php
                     while($row = $opleidingen->fetch(PDO::FETCH_ASSOC)){
                 ?>
