@@ -12,7 +12,6 @@
 <body>
     <header>
             <form action="leerling.php" method="post" id="required">
-                <th class="mdl-data-table__cell--non-numeric">Kies de werkprocessen voor</th>
                 <?php
                     while($row = $wp->fetch(PDO::FETCH_ASSOC)){
                 ?>
