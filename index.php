@@ -27,23 +27,18 @@
 ?>
     <!DOCTYPE html>
     <html>
-
-    <head>
-        
-    </head>
-
+        <?php include("inc/head.php") ?>
     <body>
         <header>
                 <?php
                 if(!isset($_SESSION['login_user'])){
             ?>
                 <form action="inc/opleiding.php" method="POST">
-                        <input type="text" name="username" required autocomplete="off">
-                        <label>Gebruikersnaam</label>
+                        <input type="text" name="username" placeholder="username" required autocomplete="off">
+
                     </div>
                     </br>
-                        <input type="password" name="password" required autocomplete="off">
-                        <label>Wachtwoord</label>
+                        <input type="password" name="password" placeholder="password" required autocomplete="off">
                     </br>
                      
                 <?php
