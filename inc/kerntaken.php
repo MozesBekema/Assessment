@@ -8,16 +8,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <?php include("head.php"); ?>
 </head>
 <body>
-    
-        <?php
-            include("menu.php");
-        ?>
+    <a href="../index.php?action=logout">Log out</a>
     <header>
-        <div class="demo-card-wide mdl-card mdl-shadow--2dp">
-            <div class="mdl-card__supporting-text">
                 <form action="werkprocessen.php" method="post">
                     <select name="kerntaken">
                         <?php
@@ -32,8 +26,6 @@
                     </select>
                 <?php include("button.php")?>
                 </form>
-            </div>
-        </div>
     </header>
 </body>
 </html>

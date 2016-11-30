@@ -29,30 +29,21 @@
     <html>
 
     <head>
-        <?php include("inc/head.php"); ?>
         
     </head>
 
-    <body style="background-image: url(img/glu.jpg); background-size:cover;">
+    <body>
         <header>
-        <div class="demo-card-wide mdl-card mdl-shadow--2dp">
-            <div class="mdl-card__title">
-                
-            </div>
-            <div class="mdl-card__supporting-text">
                 <?php
                 if(!isset($_SESSION['login_user'])){
             ?>
                 <form action="" method="POST">
-                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                        <input type="text" name="username" required autocomplete="off" class="mdl-textfield__input">
-                        <label class="mdl-textfield__label">Gebruikersnaam</label>
+                        <input type="text" name="username" required autocomplete="off">
+                        <label>Gebruikersnaam</label>
                     </div>
                     </br>
-                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" class="password">
-                        <input type="password" name="password" required autocomplete="off" class="mdl-textfield__input">
-                        <label class="mdl-textfield__label">Wachtwoord</label>
-                    </div>
+                        <input type="password" name="password" required autocomplete="off">
+                        <label>Wachtwoord</label>
                     </br>
                      
                 <?php
@@ -66,21 +57,8 @@
                header("Location: inc/opleiding.php");
             }
                     ?>
-                
-            </div>
-            <div class="mdl-card__actions mdl-card--border">
-                <button type="submit" name="submit" value="Login" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" style="margin-left: 205px;">Login</button>
-            </div>
+                <button type="submit" name="submit" value="Login">Login</button>
             </form>
-            <a href="#">
-            <div class="mdl-card__menu">
-                <div id="tt4" class="icon material-icons">share</div>
-                <div class="mdl-tooltip" for="tt4">
-                    Deel deze website met</br> andere docenten!
-                </div>
-            </div>
-            </a>
-        </div>
         </header>
     </body>
 

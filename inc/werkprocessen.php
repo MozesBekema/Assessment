@@ -7,26 +7,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <?php include("head.php"); ?>
+
 </head>
 <body>
-    
-        <?php
-            include("menu.php");
-        ?>
     <header>
-        <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp" style="margin-left:auto; margin-right:auto;">
             <form action="leerling.php" method="post">
-                <thead>
-                    <tr>
                         <th class="mdl-data-table__cell--non-numeric">Kies de werkprocessen voor hallo</th>
-                    </tr>
-                </thead>
-            <tbody>
                 <?php
                     while($row = $wp->fetch(PDO::FETCH_ASSOC)){
                 ?>
-                <tr>
                     <td class="mdl-data-table__cell--non-numeric" name="<?php echo ($row['id']);?>" required><?php echo ($row['wp_name']);?></td>
                 </tr>
                 <?php
