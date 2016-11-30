@@ -11,7 +11,7 @@
 
 </head>
 <body>
-    <a href="../index.php?action=logout">Log oudt</a>
+    <a href="../index.php?action=logout">Log oud</a>
     <header>
         <form action="klassen.php" method="post">
             <select name="opleiding_name">
