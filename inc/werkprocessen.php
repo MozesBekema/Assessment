@@ -19,22 +19,22 @@
             <form action="leerling.php" method="post">
                 <thead>
                     <tr>
-                        <th class="mdl-data-table__cell--non-numeric">Kies de werkprocessen voor </th>
+                        <th class="mdl-data-table__cell--non-numeric">Kies de werkprocessen voor hallo</th>
                     </tr>
                 </thead>
             <tbody>
                 <?php
-                    while($row = $wp->fetch(PDO::FETCH_ASSOC)){ 
+                    while($row = $wp->fetch(PDO::FETCH_ASSOC)){
                 ?>
                 <tr>
-                    <td class="mdl-data-table__cell--non-numeric" name="<?php echo ($row['id']);?>"><?php echo ($row['wp_name']);?></td>
+                    <td class="mdl-data-table__cell--non-numeric" name="<?php echo ($row['id']);?>" required><?php echo ($row['wp_name']);?></td>
                 </tr>
                 <?php
                     }
                 ?>
             </tbody>
         </table>
-            <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Verzenden</button>
+            <?php include("button.php")?>
             </form>
     </header>
 </body>
