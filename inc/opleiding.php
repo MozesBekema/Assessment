@@ -8,7 +8,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <?php include("head.php"); ?>
+
 </head>
 <body>
     <a href="../index.php?action=logout">Log out</a>

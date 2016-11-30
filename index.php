@@ -37,7 +37,7 @@
                 <?php
                 if(!isset($_SESSION['login_user'])){
             ?>
-                <form action="" method="POST">
+                <form action="inc/opleiding.php" method="POST">
                         <input type="text" name="username" required autocomplete="off">
                         <label>Gebruikersnaam</label>
                     </div>

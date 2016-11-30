@@ -11,18 +11,15 @@
 </head>
 <body>
     <header>
-            <form action="leerling.php" method="post">
-                        <th class="mdl-data-table__cell--non-numeric">Kies de werkprocessen voor hallo</th>
+            <form action="leerling.php" method="post" id="required">
+                <th class="mdl-data-table__cell--non-numeric">Kies de werkprocessen voor</th>
                 <?php
                     while($row = $wp->fetch(PDO::FETCH_ASSOC)){
                 ?>
-                    <td class="mdl-data-table__cell--non-numeric" name="<?php echo ($row['id']);?>" required><?php echo ($row['wp_name']);?></td>
-                </tr>
+                    <input type="checkbox" name="<?php echo ($row['id']);?>"><?php echo ($row['wp_name']);?></td>
                 <?php
                     }
                 ?>
-            </tbody>
-        </table>
             <?php include("button.php")?>
             </form>
     </header>
