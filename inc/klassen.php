@@ -11,7 +11,7 @@
 
 </head>
 <body>
-    
+
     <a href="../index.php?action=logout">Log out</a>
     <header>
         <form action="kerntaken.php" method="post">

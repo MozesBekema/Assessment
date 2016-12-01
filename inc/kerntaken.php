@@ -15,7 +15,7 @@
                 <form action="werkprocessen.php" method="post">
                     <select name="kerntaken">
                         <?php
-                            while($row = $kt->fetch(PDO::FETCH_ASSOC)){ 
+                            while($row = $kt->fetch(PDO::FETCH_ASSOC)){
                         ?>
                         <option value="<?php echo ($row['id']);?>">
                             <?php echo ($row['kt_name']);?>
