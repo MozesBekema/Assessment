@@ -6,22 +6,20 @@
 ?>
 <!DOCTYPE html>
 <html>
-<head>
-
-</head>
-<body>
-    <a href="../index.php?action=logout">Log out</a>
+    <?php include("head.php"); ?>
+    <body>
+        <?php include("menu.php"); ?>
         <header>
             <form action="leerling.php" method="post" id="required">
                 <?php
                     while($row = $wp->fetch(PDO::FETCH_ASSOC)){
                 ?>
-                    <input type="checkbox" name="<?php echo ($row['id']);?>"><?php echo ($row['wp_name']);?></td>
+                    <input type="checkbox" name=""><?php echo ($row['wp_name']);?>
                 <?php
                     }
                 ?>
             <?php include("button.php")?>
             </form>
         </header>
-</body>
+    </body>
 </html>

@@ -27,7 +27,9 @@
 ?>
     <!DOCTYPE html>
     <html>
-        <?php include("inc/head.php") ?>
+        <head>
+            <link href="css/assessment.css" rel="stylesheet" type="text/css" />
+        </head>
     <body>
         <header>
                 <?php
