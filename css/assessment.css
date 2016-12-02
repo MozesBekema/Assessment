@@ -45,3 +45,11 @@ a {
     color: #ffffff;
     font-size: 1.3em;
 }
+
+.hallo{
+    color: white;
+    font-size: 1.3em;
+}
+.hallo:hover{
+    background-color: transparent;
+}
