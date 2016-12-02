@@ -12,12 +12,12 @@
     <header>
             <form action="confirm.php" method="post">
                 <?php
-                    echo "Je bent <b>".$_POST['Leerling']."</b> aan het beoordelen<br />";
+                    echo "Je bent <b>".$_POST['Leerling']."</b> aan het beoordelen, uit klas ".$_SESSION['kerntaken'];
                 ?>
                 <?php
 
                 ?>
-                <input type="range" min="1" max="5" step="1" name="beoordeel1">
+                <input type="range" min="1" max="5" step="1" name="<?php echo ($row['wp_name']);?>">
                 <?php
 
                 ?>
