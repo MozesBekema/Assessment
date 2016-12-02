@@ -1,4 +1,4 @@
-<?php session_start();
+<?php //session_start();
     include("inc/connect.php");
 
     $errorLog = 0;
