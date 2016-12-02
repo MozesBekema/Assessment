@@ -55,6 +55,9 @@
                 ?>
                     <?php
             }
+            else {
+                header("Location: inc/opleiding.php");
+            }
                     ?>
                 <button type="submit" name="submit" value="Login" style="margin-left:128px;">Login</button>
             </form>
