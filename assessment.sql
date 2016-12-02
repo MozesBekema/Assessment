@@ -3,7 +3,11 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
+<<<<<<< HEAD
 -- Gegenereerd op: 29 nov 2016 om 16:31
+=======
+-- Gegenereerd op: 01 dec 2016 om 14:48
+>>>>>>> origin/master
 -- Serverversie: 10.1.13-MariaDB
 -- PHP-versie: 5.6.23
 
@@ -65,14 +69,22 @@ CREATE TABLE `beoordeling` (
 CREATE TABLE `klas` (
   `id` int(11) NOT NULL,
   `klas_name` varchar(45) DEFAULT NULL,
+<<<<<<< HEAD
   `opleidingen_id` int(4) NOT NULL
+=======
+  `opleiding_id` int(4) NOT NULL
+>>>>>>> origin/master
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `klas`
 --
 
+<<<<<<< HEAD
 INSERT INTO `klas` (`id`, `klas_name`, `opleidingen_id`) VALUES
+=======
+INSERT INTO `klas` (`id`, `klas_name`, `opleiding_id`) VALUES
+>>>>>>> origin/master
 (1, '2md1', 1),
 (3, '2IV1', 2),
 (4, '2IV1V', 2),
