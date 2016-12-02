@@ -1,6 +1,6 @@
-<?php
+<?php session_start();
+    var_dump($_SESSION);
     include("connect.php");
-    include("logincheck.php");
 
     $opleidingen = $conn->prepare("SELECT opleiding_name, id FROM `opleidingen` ORDER BY id");
     $opleidingen->execute();

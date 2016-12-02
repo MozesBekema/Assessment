@@ -1,6 +1,5 @@
 <?php
     include("connect.php");
-    include("logincheck.php");
 
 ?>
 <!DOCTYPE html>

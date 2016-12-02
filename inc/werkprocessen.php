@@ -1,7 +1,6 @@
 <?php
+//    var_dump($_POST);
     include("connect.php");
-    include("logincheck.php");
-
     $wp = $conn->prepare("SELECT wp_name, id FROM `wp` WHERE kt_id = :kt_id ORDER BY id");
     $wp->execute(array('kt_id' => $_POST['kerntaken']));
 ?>

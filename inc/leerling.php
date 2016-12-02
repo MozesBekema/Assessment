@@ -1,6 +1,6 @@
 <?php
+//    var_dump($_POST);
     include("connect.php");
-    include("logincheck.php");
 
     $leerling = $conn->prepare("SELECT name, id FROM `leerlingen` ORDER BY name");
     $leerling->execute();
