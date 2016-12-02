@@ -4,6 +4,6 @@
 <nav>
     <ul>
         <?php echo $_SESSION['login_user']['name'] ?>
-        <li><a href="../index.php?action=logout">Log out</a></li>
+        <li><a href="../index.php?action=logout">Log out pl</a></li>
     </ul>
 </nav>
