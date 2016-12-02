@@ -25,6 +25,7 @@
                         }
                     ?>
                 </select>
+                <input type="hidden" name="opleiding_name" value="<?= $_POST['opleiding_name'] ?>">
             <?php include("button.php")?>
             </form>
         </header>
