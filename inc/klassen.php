@@ -1,5 +1,5 @@
 <?php
-//    var_dump($_POST);
+    include("logincheck.php");
     include("connect.php");
 
     $klas = $conn->prepare("SELECT klas_name, id FROM `klas` WHERE opleiding_id = :opleiding_id ORDER BY id");

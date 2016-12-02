@@ -1,5 +1,5 @@
 <?php
-//    var_dump($_POST);
+    include("logincheck.php");
     include("connect.php");
 
     $leerling = $conn->prepare("SELECT name, id FROM `leerlingen` ORDER BY name");

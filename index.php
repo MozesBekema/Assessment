@@ -14,8 +14,7 @@
 
         $username = filter_var($username, FILTER_SANITIZE_STRING);
         $password = filter_var($password, FILTER_SANITIZE_STRING);
-//        var_dump($username);
-//        var_dump($password);
+
         $query = $conn->prepare("SELECT username, roles_id, name FROM `accounts` WHERE `username` = :username AND `password` = :password");
         $query->execute(array('username' => $username, 'password' => $password));
 
@@ -54,9 +53,6 @@
             }
                 ?>
                     <?php
-            }
-            else {
-                header("Location: inc/opleiding.php");
             }
                     ?>
                 <button type="submit" name="submit" value="Login" style="margin-left:128px;">Login</button>

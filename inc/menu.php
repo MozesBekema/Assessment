@@ -3,7 +3,7 @@
 ?>
 <nav>
     <ul>
-        <?php echo $_SESSION['login_user']['name'] ?>
-        <li><a href="../index.php?action=logout">Log out pl</a></li>
+        <?php echo "Hallo, ".$_SESSION['login_user']['name'] ?>
+        <li><a href="../index.php?action=logout">Log out</a></li>
     </ul>
 </nav>

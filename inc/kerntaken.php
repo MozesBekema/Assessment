@@ -1,5 +1,5 @@
 <?php
-    var_dump($_POST);
+    include("logincheck.php");
     include("connect.php");
 
     $kt = $conn->prepare("SELECT kt_name, id FROM `kt` ORDER BY id");
