@@ -14,8 +14,7 @@
 
         $username = filter_var($username, FILTER_SANITIZE_STRING);
         $password = filter_var($password, FILTER_SANITIZE_STRING);
-//        var_dump($username);
-//        var_dump($password);
+
         $query = $conn->prepare("SELECT username, roles_id, name FROM `accounts` WHERE `username` = :username AND `password` = :password");
         $query->execute(array('username' => $username, 'password' => $password));
 
