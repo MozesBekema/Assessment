@@ -12,7 +12,7 @@
     <header>
             <form action="confirm.php" method="post">
                 <?php
-                    echo "Je bent <b>".$_POST['Leerling']."</b> aan het beoordelen, uit klas ".$_SESSION['kerntaken'];
+                    echo "Je bent <b>".$_POST['Leerling']."</b> aan het beoordelen, uit klas ".$_SESSION[''];
                 ?>
                 <?php
 

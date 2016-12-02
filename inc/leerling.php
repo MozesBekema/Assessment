@@ -6,13 +6,10 @@
     $leerling->execute();
 
     $_SESSION['werkprocessen'] = array();
-    //var_dump($_POST);
     // loop over werkprocessen
     foreach($_POST as $key=>$value){
-        //echo($key . " " . $value . "<br>");
         if($value == "on"){
             $name = substr($key, 2);
-            //echo($name . "<br />");
             array_push($_SESSION['werkprocessen'], $name);
         }
     }
