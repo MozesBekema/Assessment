@@ -1,16 +1,27 @@
 <?php
-    include("connect.php");
 
+    include("logincheck.php");
+//    var_dump($_SESSION);
+    include("connect.php");
 ?>
 <!DOCTYPE html>
 <html>
-<head>
-
-</head>
+    <?php include("head.php"); ?>
 <body>
+    <?php include("menu.php"); ?>
     <header>
-            <form action="leerling.php" method="post" id="required">
+            <form action="confirm.php" method="post">
+                <?php
+                    echo "Je bent <b>".$_POST['Leerling']."</b> aan het beoordelen<br />";
+                ?>
+                <?php
 
+                ?>
+                <input type="range" min="1" max="5" step="1" name="beoordeel1">
+                <?php
+
+                ?>
+                <?php include("button.php")?>
             </form>
     </header>
 </body>

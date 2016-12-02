@@ -4,6 +4,7 @@
 
     $kt = $conn->prepare("SELECT kt_name, id FROM `kt` ORDER BY id");
     $kt->execute();
+    $_SESSION['klassen'] = $_POST['klassen'];
 ?>
 <!DOCTYPE html>
 <html>
