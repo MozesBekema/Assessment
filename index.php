@@ -31,7 +31,7 @@
             <link href="css/assessment.css" rel="stylesheet" type="text/css" />
         </head>
     <body>
-        <header>
+        <header style="margin-top:-60px;">
                 <?php
                 if(!isset($_SESSION['login_user'])){
             ?>
@@ -54,7 +54,7 @@
                header("Location: inc/opleiding.php");
             }
                     ?>
-                <button type="submit" name="submit" value="Login">Login</button>
+                <button type="submit" name="submit" value="Login" style="margin-left:128px;">Login</button>
             </form>
         </header>
     </body>
