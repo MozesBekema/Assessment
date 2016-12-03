@@ -21,7 +21,7 @@
                 <?php
 
                 ?>
-                <input type="range" min="1" max="5" step="1" name="<?php echo ($row['']);?>">
+                <input type="range" min="1" max="5" step="1" name="<?php echo ($row['klas_name']);?>">
                 <?php
 
                 ?>
