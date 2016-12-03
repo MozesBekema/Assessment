@@ -44,7 +44,7 @@
 
                     </div>
                     </br>
-                        <input type="password" name="password" placeholder="password" required autocomplete="off">
+                        <input type="password" name="password" placeholder="password" required autocomplete="off" >
                     </br>
 
                 <?php
