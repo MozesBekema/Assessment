@@ -6,6 +6,5 @@ Before you push a file you want to commit it first. You can do this by typing
 <br/>
 ```html
 git commit -m "[message here]"
-
 ```
 
