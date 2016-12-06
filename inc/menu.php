@@ -1,9 +1,17 @@
 <?php
     include("head.php");
 ?>
-<nav>
-    <ul>
-        <li><a href="../index.php?action=logout">Log out</a></li>
-        <li class="hallo"><?php echo "Hallo, ".$_SESSION['login_user']['name'] ?></li>
-    </ul>
-</nav>
+    <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+            <!-- Title -->
+            <span class="mdl-layout-title">Assessment Beoordelingen</span>
+            <!-- Add spacer, to align navigation to the right -->
+            <div class="mdl-layout-spacer"></div>
+            <!-- Navigation -->
+            <nav class="mdl-navigation">
+                <li><?php echo "Hallo, ".$_SESSION['login_user']['name'] ?></li>
+                <a href="../index.php?action=logout">Log out</a>
+            </nav>
+
+        </div>
+    </header>
