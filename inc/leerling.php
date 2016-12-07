@@ -13,8 +13,6 @@
             array_push($_SESSION['werkprocessen'], $name);
         }
     }
-
-    //
 ?>
 <!DOCTYPE html>
 <html>
