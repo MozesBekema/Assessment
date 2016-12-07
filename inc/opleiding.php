@@ -15,20 +15,24 @@
     <body>
         <?php include("menu.php"); ?>
         <header>
-            <form action="klassen.php" method="post">
-                <select name="opleiding_name">
-                    <?php
-                        while($row = $opleidingen->fetch(PDO::FETCH_ASSOC)){
-                    ?>
-                    <option value="<?php echo ($row['id']);?>">
-                        <?php echo ($row['opleiding_name']);?>
-                    </option>
-                    <?php
-                        }
-                    ?>
-                </select>
-                <?php include("button.php")?>
-            </form>
+            <div class="card-wide mdl-card mdl-shadow--2dp">
+                <div class="mdl-card__title">
+                </div>
+                <form action="klassen.php" method="post">
+                    <select name="opleiding_name">
+                        <?php
+                            while($row = $opleidingen->fetch(PDO::FETCH_ASSOC)){
+                        ?>
+                        <option value="<?php echo ($row['id']);?>">
+                            <?php echo ($row['opleiding_name']);?>
+                        </option>
+                        <?php
+                            }
+                        ?>
+                    </select>
+                    <?php include("button.php")?>
+                </form>
+            </div>
         </header>
     </body>
 </html>

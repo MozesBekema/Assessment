@@ -58,3 +58,22 @@ Steve Pronk
 Thom van Oort
 511095@student.glu.nl
 
+INSERT INTO `leerlingen` (`id`, `name`, `email`) VALUES
+(NULL, 'Akram Tarioui', '517379@student.glu.nl'),
+(NULL, 'Brendan Groot', '120497@student.glu.nl'),
+(NULL, 'Bryant van den Berg', '516399@student.glu.nl'),
+(NULL, 'Daan de Vos', '517852@student.glu.nl'),
+(NULL, 'Faan Veldhuijsen', '516614@student.glu.nl'),
+(NULL, 'Hugo Hulsebosch', '517357@student.glu.nl'),
+(NULL, 'Kevin Mulder', '515829@student.glu.nl'),
+(NULL, 'Marc Dufrasnes', '518433@student.glu.nl'),
+(NULL, 'Marco van de Lindt', '517570@student.glu.nl'),
+(NULL, 'Miriam Kant', '515871@student.glu.nl'),
+(NULL, 'Myron Keurntjes', '517726@student.glu.nl'),
+(NULL, 'Nadhr Braam', '511177@student.glu.nl'),
+(NULL, 'Nino de Jong', '517068@student.glu.nl'),
+(NULL, 'Roan Roodenburg', '516850@student.glu.nl'),
+(NULL, 'Roeland Bosch', '516589@student.glu.nl'),
+(NULL, 'Rune Daanen', '517266@student.glu.nl'),
+(NULL, 'Steve Pronk', '518967@student.glu.nl'),
+(NULL, 'Thom van Oort', '511095@student.glu.nl');
