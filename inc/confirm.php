@@ -11,7 +11,7 @@
     <?php include("menu.php"); ?>
     <header>
             <form action="" method="post">
-                <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Verstuur</button>
+                <?php include("button.php")?>
             </form>
     </header>
 </body>

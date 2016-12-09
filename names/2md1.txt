@@ -77,9 +77,3 @@ INSERT INTO `leerlingen` (`id`, `name`, `email`) VALUES
 (NULL, 'Rune Daanen', '517266@student.glu.nl'),
 (NULL, 'Steve Pronk', '518967@student.glu.nl'),
 (NULL, 'Thom van Oort', '511095@student.glu.nl');
-
-
-
-
-
-

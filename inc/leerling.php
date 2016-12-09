@@ -1,10 +1,9 @@
 <?php
     include("logincheck.php");
-var_dump($_SESSION);
     include("connect.php");
 
-    $leerling = $conn->prepare("SELECT name, id, klas_id FROM `leerlingen` WHERE klas_id = :klas_id ORDER BY id");
-    $leerling->execute(array('klas_id' => $_SESSION['klassen']));
+    $leerling = $conn->prepare("SELECT name, id FROM `leerlingen` ORDER BY name");
+    $leerling->execute();
 
     $_SESSION['werkprocessen'] = array();
     // loop over werkprocessen
@@ -21,10 +20,6 @@ var_dump($_SESSION);
     <body>
         <?php include("menu.php"); ?>
         <header>
-            <div class="card-wide mdl-card mdl-shadow--2dp">
-                <div class="mdl-card__title">
-                    <h2>Leerling.</h2>
-                </div>
                 <form action="beoordelen.php" method="post">
                     <select name="Leerling">
                         <?php
