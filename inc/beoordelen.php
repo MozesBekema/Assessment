@@ -20,7 +20,8 @@
             <form action="confirm.php" method="post">
                 <?php
                     echo "Je bent <b>".$_POST['Leerling']."</b> aan het beoordelen, uit klas ".$row['klas_name'];
-                ?><br/>
+
+                ?><br/><br>
 				<?php
 					foreach($_SESSION['werkprocessen'] as $werk){
 						?>
