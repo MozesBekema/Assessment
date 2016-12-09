@@ -19,7 +19,7 @@
                         <?php
                             while($row = $wp->fetch(PDO::FETCH_ASSOC)){
                         ?>
-                            <input type="checkbox" class="wpCenter" name="wp<?php echo ($row['wp_name']);?>">
+                            <input type="checkbox" class="wpCenter" name="wp<?= str_replace(".","_",$row['wp_name']);?>">
                             <label><?php echo ($row['wp_name']);?></label>
                         <?php
                             }

@@ -1,7 +1,6 @@
 <?php
-
     include("logincheck.php");
-    //var_dump($_SESSION);
+//    var_dump($_SESSION);
     include("connect.php");
     $klas = $conn->prepare("SELECT klas_name, id FROM `klas` WHERE id = :id");
     $klas->execute(array('id' => $_SESSION['klassen']));
@@ -27,7 +26,7 @@
 					foreach($_SESSION['werkprocessen'] as $werk){
 						?>
 						<label>
-							<?= $werk
+							<?= str_replace("_",".",$werk);
 							?>
 				</label><input type="range" class="mdl-slider mdl-js-slider" min="1" max="5" step="1" name="<?php echo $werk;?>"><br/>
 						<?php
