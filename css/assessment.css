@@ -16,6 +16,9 @@ button {
     font-size: 1.1em;
     color: #ffffff;
 }
+.mdl-button {
+    color: #ffffff;
+}
 header {
     padding-top: 10px;
 }

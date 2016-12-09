@@ -13,6 +13,7 @@
         <header>
             <div class="card-wide mdl-card mdl-shadow--2dp">
                 <div class="mdl-card__title">
+                    <h2>Werkprocessen.</h2>
                 </div>
                 <form action="leerling.php" method="post" id="required">
 
