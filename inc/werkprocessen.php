@@ -24,7 +24,7 @@
                         <?php
                             }
                         ?>
-
+                        <br/>
                 <?php include("button.php")?>
                 </form>
             </div>
