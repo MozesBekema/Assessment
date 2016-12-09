@@ -1,7 +1,7 @@
 <?php
 
     include("logincheck.php");
-//    var_dump($_SESSION);
+    //var_dump($_SESSION);
     include("connect.php");
     $klas = $conn->prepare("SELECT klas_name, id FROM `klas` WHERE id = :id");
     $klas->execute(array('id' => $_SESSION['klassen']));
@@ -21,7 +21,17 @@
                 <?php
                     echo "Je bent <b>".$_POST['Leerling']."</b> aan het beoordelen, uit klas ".$row['klas_name'];
                 ?><br/>
-                <input type="range" class="mdl-slider mdl-js-slider" min="1" max="5" step="1" name="<?php echo ($row['klas_name']);?>"><br/>
+				<?php
+					foreach($_SESSION['werkprocessen'] as $werk){
+						?>
+						<label>
+							<?= $werk
+							?>
+				</label><input type="range" class="mdl-slider mdl-js-slider" min="1" max="5" step="1" name="<?php echo $werk;?>"><br/>
+						<?php
+					}
+				?>
+
                 <?php include("button.php")?>
             </form>
         </div>
