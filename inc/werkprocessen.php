@@ -11,17 +11,23 @@
     <body>
         <?php include("menu.php"); ?>
         <header>
-            <form action="leerling.php" method="post" id="required">
-                <?php
-                    while($row = $wp->fetch(PDO::FETCH_ASSOC)){
-                ?>
-                    <input type="checkbox" name="wp<?php echo ($row['wp_name']);?>">
-                    <label><?php echo ($row['wp_name']);?></label>
-                <?php
-                    }
-                ?>
-            <?php include("button.php")?>
-            </form>
+            <div class="card-wide mdl-card mdl-shadow--2dp">
+                <div class="mdl-card__title">
+                </div>
+                <form action="leerling.php" method="post" id="required">
+
+                        <?php
+                            while($row = $wp->fetch(PDO::FETCH_ASSOC)){
+                        ?>
+                            <input type="checkbox" class="wpCenter" name="wp<?php echo ($row['wp_name']);?>">
+                            <label><?php echo ($row['wp_name']);?></label>
+                        <?php
+                            }
+                        ?>
+
+                <?php include("button.php")?>
+                </form>
+            </div>
         </header>
     </body>
 </html>
