@@ -12,23 +12,28 @@
     <body>
         <?php include("menu.php"); ?>
         <header>
-            <form action="kerntaken.php" method="post">
-                <select name="klassen">
-                    <?php
-                        while($row = $klas->fetch(PDO::FETCH_ASSOC)){
-                    ?>
-                    <option value="<?php echo ($row['id']);?>">
+            <div class="card-wide mdl-card mdl-shadow--2dp">
+                <div class="mdl-card__title">
+                    <h2>Klassen.</h2>
+                </div>
+                <form action="kerntaken.php" method="post">
+                    <select name="klassen">
                         <?php
-                            echo ($row['klas_name']);
+                            while($row = $klas->fetch(PDO::FETCH_ASSOC)){
                         ?>
-                    </option>
-                    <?php
-                        }
-                    ?>
-                </select>
+                        <option value="<?php echo ($row['id']);?>">
+                            <?php
+                                echo ($row['klas_name']);
+                            ?>
+                        </option>
+                        <?php
+                            }
+                        ?>
+                    </select>
 
-            <?php include("button.php")?>
-            </form>
+                <?php include("button.php")?>
+                </form>
+            </div>
         </header>
     </body>
 </html>

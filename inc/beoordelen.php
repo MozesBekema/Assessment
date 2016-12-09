@@ -1,5 +1,4 @@
 <?php
-
     include("logincheck.php");
 //    var_dump($_SESSION);
     include("connect.php");
@@ -14,19 +13,29 @@
 <body>
     <?php include("menu.php"); ?>
     <header>
+        <div class="card-wide mdl-card mdl-shadow--2dp">
+            <div class="mdl-card__title">
+                <h2>Beoordelen.</h2>
+            </div>
             <form action="confirm.php" method="post">
                 <?php
                     echo "Je bent <b>".$_POST['Leerling']."</b> aan het beoordelen, uit klas ".$row['klas_name'];
-                ?>
-                <?php
 
-                ?>
-                <input type="range" min="1" max="5" step="1" name="<?php echo ($row['klas_name']);?>">
-                <?php
+                ?><br/><br>
+				<?php
+					foreach($_SESSION['werkprocessen'] as $werk){
+						?>
+						<label>
+							<?= str_replace("_",".",$werk);
+							?>
+				</label><input type="range" class="mdl-slider mdl-js-slider" min="1" max="5" step="1" name="<?php echo $werk;?>"><br/>
+						<?php
+					}
+				?>
 
-                ?>
                 <?php include("button.php")?>
             </form>
+        </div>
     </header>
 </body>
 </html>

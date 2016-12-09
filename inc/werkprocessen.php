@@ -11,17 +11,32 @@
     <body>
         <?php include("menu.php"); ?>
         <header>
-            <form action="leerling.php" method="post" id="required">
-                <?php
-                    while($row = $wp->fetch(PDO::FETCH_ASSOC)){
-                ?>
-                    <input type="checkbox" name="wp<?php echo ($row['wp_name']);?>">
-                    <label><?php echo ($row['wp_name']);?></label>
-                <?php
-                    }
-                ?>
-            <?php include("button.php")?>
-            </form>
+            <div class="card-wide mdl-card mdl-shadow--2dp">
+                <div class="mdl-card__title">
+                    <h2>Werkprocessen.</h2>
+                </div>
+                <form action="leerling.php" method="post" id="required">
+
+                        <?php
+                            while($row = $wp->fetch(PDO::FETCH_ASSOC)){
+                        ?>
+                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                            <input style="margin-bottom:10px;" type="checkbox" class="mdl-checkbox__input" name="wp<?= str_replace(".","_",$row['wp_name']);?>">
+                            <span class="mdl-checkbox__label"><?php echo ($row['wp_name']);?></span>
+                        </label>
+
+                        <?php
+                            }
+                        ?>
+                        <br/>
+                <?php include("button.php")?>
+                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
+  <input type="checkbox" id="checkbox-1" class="mdl-checkbox__input" checked>
+  <span class="mdl-checkbox__label"></span>
+</label>
+                </form>
+                <br/>
+            </div>
         </header>
     </body>
 </html>

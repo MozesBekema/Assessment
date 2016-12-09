@@ -4,12 +4,20 @@ body {
     background-image: url(../img/background.jpg);
     background-size: cover;
 }
+h2 {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
 select {
     font-size: 1em;
     border-radius: 0px;
 }
 button {
     font-size: 1.1em;
+    color: #ffffff;
+}
+.mdl-button {
+    color: #ffffff;
 }
 header {
     padding-top: 10px;
@@ -52,6 +60,10 @@ select {
     margin-right: auto !important;
 }
 .card-wide {
+    margin-left: auto;
+    margin-right: auto;
+}
+.card-wide h2 {
     margin-left: auto;
     margin-right: auto;
 }

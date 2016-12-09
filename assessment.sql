@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.5.1
+-- version 4.5.2
 -- http://www.phpmyadmin.net
 --
--- Host: 127.0.0.1
--- Gegenereerd op: 01 dec 2016 om 14:48
--- Serverversie: 10.1.13-MariaDB
--- PHP-versie: 5.6.23
+-- Host: localhost
+-- Gegenereerd op: 09 dec 2016 om 14:37
+-- Serverversie: 10.1.19-MariaDB
+-- PHP-versie: 7.0.13
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -110,27 +110,68 @@ INSERT INTO `kt` (`id`, `kt_name`) VALUES
 CREATE TABLE `leerlingen` (
   `id` int(11) NOT NULL,
   `name` varchar(40) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
-  `email` varchar(50) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL
+  `email` varchar(50) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `klas_id` int(10) NOT NULL,
+  `1.1res` int(1) DEFAULT NULL,
+  `1.2res` int(1) DEFAULT NULL,
+  `1.3res` int(1) DEFAULT NULL,
+  `1.4res` int(1) DEFAULT NULL,
+  `1.5res` int(1) DEFAULT NULL,
+  `2.1res` int(1) DEFAULT NULL,
+  `2.2res` int(1) DEFAULT NULL,
+  `2.3res` int(1) DEFAULT NULL,
+  `2.4res` int(1) DEFAULT NULL,
+  `2.5res` int(1) DEFAULT NULL,
+  `2.6res` int(1) DEFAULT NULL,
+  `2.7res` int(1) DEFAULT NULL,
+  `3.1res` int(1) DEFAULT NULL,
+  `3.2res` int(1) DEFAULT NULL,
+  `3.3res` int(1) DEFAULT NULL,
+  `3.4res` int(1) DEFAULT NULL,
+  `4.1res` int(1) DEFAULT NULL,
+  `4.2res` int(1) DEFAULT NULL,
+  `4.3res` int(1) DEFAULT NULL,
+  `4.4res` int(1) DEFAULT NULL,
+  `4.5res` int(1) DEFAULT NULL,
+  `4.6res` int(1) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `leerlingen`
 --
 
-INSERT INTO `leerlingen` (`id`, `name`, `email`) VALUES
-(1, 'Charif Cherkaoui', '519097@student.glu.nl'),
-(2, 'Daen Rebel', '517056@student.glu.nl'),
-(3, 'Jelmer Egels', '517739@student.glu.nl'),
-(4, 'Joost de Lange', '515547@student.glu.nl'),
-(5, 'Kenny Gabriels', '510720@student.glu.nl'),
-(6, 'Luke Peeks', '518860@student.glu.nl'),
-(7, 'Mickey Schipper', '519027@student.glu.nl'),
-(8, 'Nick Vooren', '515857@student.glu.nl'),
-(9, 'Quinn Stadens', '517705@student.glu.nl'),
-(10, 'Stefan van den Eijkel', '516556@student.glu.nl'),
-(11, 'Stefan van Echtelt', '515851@student.glu.nl'),
-(12, 'Terry Zhou', '518900@student.glu.nl'),
-(13, 'Thomas Bekema', '515731@student.glu.nl');
+INSERT INTO `leerlingen` (`id`, `name`, `email`, `klas_id`, `1.1res`, `1.2res`, `1.3res`, `1.4res`, `1.5res`, `2.1res`, `2.2res`, `2.3res`, `2.4res`, `2.5res`, `2.6res`, `2.7res`, `3.1res`, `3.2res`, `3.3res`, `3.4res`, `4.1res`, `4.2res`, `4.3res`, `4.4res`, `4.5res`, `4.6res`) VALUES
+(1, 'Charif Cherkaoui', '519097@student.glu.nl', 2, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(2, 'Daen Rebel', '517056@student.glu.nl', 2, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(3, 'Jelmer Egels', '517739@student.glu.nl', 2, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(4, 'Joost de Lange', '515547@student.glu.nl', 2, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(5, 'Kenny Gabriels', '510720@student.glu.nl', 2, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(6, 'Luke Peeks', '518860@student.glu.nl', 2, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(7, 'Mickey Schipper', '519027@student.glu.nl', 2, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(8, 'Nick Vooren', '515857@student.glu.nl', 2, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(9, 'Quinn Stadens', '517705@student.glu.nl', 2, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(10, 'Stefan van den Eijkel', '516556@student.glu.nl', 2, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(11, 'Stefan van Echtelt', '515851@student.glu.nl', 2, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(12, 'Terry Zhou', '518900@student.glu.nl', 2, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(13, 'Thomas Bekema', '515731@student.glu.nl', 2, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(14, 'Akram Tarioui', '517379@student.glu.nl', 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(15, 'Brendan Groot', '120497@student.glu.nl', 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(16, 'Bryant van den Berg', '516399@student.glu.nl', 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(17, 'Daan de Vos', '517852@student.glu.nl', 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(18, 'Faan Veldhuijsen', '516614@student.glu.nl', 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(19, 'Hugo Hulsebosch', '517357@student.glu.nl', 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(20, 'Kevin Mulder', '515829@student.glu.nl', 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(21, 'Marc Dufrasnes', '518433@student.glu.nl', 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(22, 'Marco van de Lindt', '517570@student.glu.nl', 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(23, 'Miriam Kant', '515871@student.glu.nl', 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(24, 'Myron Keurntjes', '517726@student.glu.nl', 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(25, 'Nadhr Braam', '511177@student.glu.nl', 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(26, 'Nino de Jong', '517068@student.glu.nl', 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(27, 'Roan Roodenburg', '516850@student.glu.nl', 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(28, 'Roeland Bosch', '516589@student.glu.nl', 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(29, 'Rune Daanen', '517266@student.glu.nl', 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(30, 'Steve Pronk', '518967@student.glu.nl', 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(31, 'Thom van Oort', '511095@student.glu.nl', 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -295,7 +336,7 @@ ALTER TABLE `kt`
 -- AUTO_INCREMENT voor een tabel `leerlingen`
 --
 ALTER TABLE `leerlingen`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
 --
 -- AUTO_INCREMENT voor een tabel `opleidingen`
 --

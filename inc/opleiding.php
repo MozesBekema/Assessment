@@ -17,6 +17,7 @@
         <header>
             <div class="card-wide mdl-card mdl-shadow--2dp">
                 <div class="mdl-card__title">
+                    <h2>Opleiding.</h2>
                 </div>
                 <form action="klassen.php" method="post">
                     <select name="opleiding_name">
