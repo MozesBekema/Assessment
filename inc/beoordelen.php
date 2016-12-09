@@ -15,7 +15,7 @@
     <?php include("menu.php"); ?>
     <header>
         <div class="card-wide mdl-card mdl-shadow--2dp">
-            <div class="mdl-card__title">
+            <div class="mdl-card__title"><h2>Beoordelen.</h2>
             </div>
             <form action="confirm.php" method="post">
                 <?php
