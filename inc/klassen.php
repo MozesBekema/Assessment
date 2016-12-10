@@ -14,7 +14,7 @@
         <header>
             <div class="card-wide mdl-card mdl-shadow--2dp">
                 <div class="mdl-card__title">
-                    <h2>Klassen.</h2>
+                    <h2>Klassen</h2>
                 </div>
                 <form action="kerntaken.php" method="post">
                     <select name="klassen">

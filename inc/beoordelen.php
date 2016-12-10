@@ -5,7 +5,6 @@
     $klas = $conn->prepare("SELECT klas_name, id FROM `klas` WHERE id = :id");
     $klas->execute(array('id' => $_SESSION['klassen']));
     $row = $klas->fetch(PDO::FETCH_ASSOC);
-//    var_dump($row['klas_name']);
 ?>
 <!DOCTYPE html>
 <html>
@@ -15,7 +14,7 @@
     <header>
         <div class="card-wide mdl-card mdl-shadow--2dp">
             <div class="mdl-card__title">
-                <h2>Beoordelen.</h2>
+                <h2>Beoordelen</h2>
             </div>
             <form action="confirm.php" method="post">
                 <?php

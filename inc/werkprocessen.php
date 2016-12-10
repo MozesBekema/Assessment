@@ -13,10 +13,10 @@
         <header>
             <div class="card-wide mdl-card mdl-shadow--2dp">
                 <div class="mdl-card__title">
-                    <h2>Werkprocessen.</h2>
+                    <h2>Werkprocessen</h2>
                 </div>
                 <form action="leerling.php" method="post" id="required">
-
+                        <div style="padding-left:44%;">
                         <?php
                             while($row = $wp->fetch(PDO::FETCH_ASSOC)){
                         ?>
@@ -28,6 +28,7 @@
                         <?php
                             }
                         ?>
+                    </div>
                         <br/>
                 <?php include("button.php")?>
                 </form>

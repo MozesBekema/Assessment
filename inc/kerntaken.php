@@ -14,7 +14,7 @@
         <header>
             <div class="card-wide mdl-card mdl-shadow--2dp">
                 <div class="mdl-card__title">
-                    <h2>Kerntaken.</h2>
+                    <h2>Kerntaken</h2>
                 </div>
                 <form action="werkprocessen.php" method="post">
                     <select name="kerntaken">

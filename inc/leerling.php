@@ -1,6 +1,6 @@
 <?php
     include("logincheck.php");
-var_dump($_SESSION);
+//    var_dump($_SESSION);
     include("connect.php");
 
     $leerling = $conn->prepare("SELECT name, id, klas_id FROM `leerlingen` WHERE klas_id = :klas_id ORDER BY id");
@@ -23,7 +23,7 @@ var_dump($_SESSION);
         <header>
             <div class="card-wide mdl-card mdl-shadow--2dp">
                 <div class="mdl-card__title">
-                    <h2>Leerling.</h2>
+                    <h2>Leerling</h2>
                 </div>
                 <form action="beoordelen.php" method="post">
                     <select name="Leerling">
