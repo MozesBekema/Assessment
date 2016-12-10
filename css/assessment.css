@@ -19,6 +19,14 @@ button {
 .mdl-button {
     color: #ffffff;
 }
+.mdl-checkbox__label {
+    float: left;
+}
+.mdl-checkbox {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
 header {
     padding-top: 10px;
 }

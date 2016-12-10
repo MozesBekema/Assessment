@@ -30,10 +30,6 @@
                         ?>
                         <br/>
                 <?php include("button.php")?>
-                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
-  <input type="checkbox" id="checkbox-1" class="mdl-checkbox__input" checked>
-  <span class="mdl-checkbox__label"></span>
-</label>
                 </form>
                 <br/>
             </div>
