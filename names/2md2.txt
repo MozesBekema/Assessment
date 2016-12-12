@@ -51,4 +51,5 @@ INSERT INTO `leerlingen` (`id`, `name`, `email`) VALUES
 (NULL, 'Stefan van den Eijkel', '516556@student.glu.nl'),
 (NULL, 'Stefan van Echtelt', '515851@student.glu.nl'),
 (NULL, 'Terry Zhou', '518900@student.glu.nl'),
+(NULL, 'Vincent Jamont', '516337@student.glu.nl'),
 (NULL, 'Thomas Bekema', '515731@student.glu.nl');
