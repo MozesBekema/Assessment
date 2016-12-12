@@ -1,9 +1,19 @@
 <?php
     include("logincheck.php");
     include("connect.php");
-    $wp = $conn->prepare("SELECT wp_name, id FROM `wp` WHERE kt_id = :kt_id ORDER BY id");
+    $wp = $conn->prepare("
+		SELECT
+			CONCAT(kt_id, '.', wp_num, ' ', wp_name) as wpnaam, id
+		FROM `wp`
+		WHERE kt_id = :kt_id
+		ORDER BY id
+
+	");
     $wp->execute(array('kt_id' => $_POST['kerntaken']));
     $_SESSION['kerntaken'] = $_POST['kerntaken'];
+
+
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -21,8 +31,8 @@
                             while($row = $wp->fetch(PDO::FETCH_ASSOC)){
                         ?>
                         <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                            <input style="margin-bottom:10px;" type="checkbox" class="mdl-checkbox__input" name="wp<?= str_replace(".","_",$row['wp_name']);?>">
-                            <span class="mdl-checkbox__label"><?php echo ($row['wp_name']);?></span>
+                            <input style="margin-bottom:10px;" type="checkbox" class="mdl-checkbox__input" name="wp_id_<?php echo $row['id']; ?>" value="<?php echo $row['id']; ?>">
+                            <span class="mdl-checkbox__label"><?php echo ($row['wpnaam']);?></span>
                         </label>
 
                         <?php

@@ -1,10 +1,15 @@
-<?php
+<pre><?php
     include("logincheck.php");
-//    var_dump($_SESSION);
+
     include("connect.php");
     $klas = $conn->prepare("SELECT klas_name, id FROM `klas` WHERE id = :id");
     $klas->execute(array('id' => $_SESSION['klassen']));
     $row = $klas->fetch(PDO::FETCH_ASSOC);
+
+
+print_r($_SESSION);
+
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -27,12 +32,21 @@
 						<label>
 							<?= str_replace("_",".",$werk);
 							?>
-				</label><input type="range" class="mdl-slider mdl-js-slider" min="1" max="5" step="1" name="<?php echo $werk;?>"><br/>
+				</label>
+
+
+				<input type="range" class="mdl-slider mdl-js-slider" min="1" max="5" step="1" name=""/>
+
+
+							   <?php echo $werk;?><br/>
 						<?php
 					}
 				?>
 
-                <?php include("button.php")?>
+                <?php
+				include("button.php")
+
+				?>
                 <div class="mdl-card__title"></div>
             </form>
         </div>
