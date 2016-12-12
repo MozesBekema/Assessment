@@ -1,4 +1,4 @@
-<pre><?php
+<?php
     include("logincheck.php");
 
     include("connect.php");
@@ -7,7 +7,7 @@
     $row = $klas->fetch(PDO::FETCH_ASSOC);
 
 
-print_r($_SESSION);
+//print_r($_SESSION);
 
 
 ?>

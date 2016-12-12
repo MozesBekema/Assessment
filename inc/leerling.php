@@ -30,7 +30,7 @@
                             while($row = $leerling->fetch(PDO::FETCH_ASSOC)){
                         ?>
                         <option value="<?php
-									   	echo ($row['id']);
+									   	echo ($row['name']);
 									   ?>" type="checkbox">
                             <?php echo ($row['name']);?>
                         </option>
