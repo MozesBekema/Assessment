@@ -33,6 +33,7 @@
 				?>
 
                 <?php include("button.php")?>
+                <div class="mdl-card__title"></div>
             </form>
         </div>
     </header>

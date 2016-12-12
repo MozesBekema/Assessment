@@ -16,6 +16,7 @@ button {
     font-size: 1.1em;
     color: #ffffff;
 }
+
 .mdl-button {
     color: #ffffff;
 }
@@ -89,5 +90,16 @@ select {
     }
     .mdl-card {
         width: 100% !important;
+    }
+}
+@media screen and (max-width: 370px) {
+    .mdl-navigation li {
+        font-size: 1.2em !important;
+    }
+    .mdl-navigation a {
+        font-size: 1.2em;
+    }
+    .card-wide h2 {
+        font-size: 0.9em;
     }
 }

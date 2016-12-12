@@ -66,7 +66,7 @@
                     }
                     ?>
                     <div class="mdl-card__actions mdl-card--border">
-                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" type="submit" name="submit" value="Login" style="margin-left:216px;">Login</button>
+                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" type="submit" name="submit" value="Login" style="margin-left:216px;color:#fff;">Login</button>
                     </div>
                     </form>
                 </div>
