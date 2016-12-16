@@ -22,7 +22,7 @@
             <form action="" method="post">
                 <?php echo "U heeft <b>".$_SESSION['leerling']."</b> beoordeeld, wilt u dit versturen?" ?><br/></br>
                 <?php foreach ($_SESSION['beoordeling'] as $key => $value){ ?>
-                    <?php echo ($key . ' ' . $value); ?><br/></br>
+                    <?php echo ($key . ': ' . $value); ?><br/></br>
                 <?php } ?>
                 <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Verstuur</button>
             </form>

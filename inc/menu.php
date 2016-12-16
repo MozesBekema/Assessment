@@ -15,8 +15,7 @@
                     <i class="material-icons">more_vert</i>
                 </button>
                 <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="demo-menu-lower-right">
-                    <li class="mdl-menu__item">Some Action</li>
-                    <li class="mdl-menu__item">Another Action</li>
+                    <li class="mdl-menu__item"><a href="opties.php">Opties</a></li>
 
                     <li class="mdl-menu__item"><a href="../index.php?action=logout">Log out</a></li>
                 </ul>

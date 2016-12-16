@@ -2,12 +2,15 @@ body {
     margin: 0 auto;
     font-family: 'Roboto', sans-serif;
     background-image: url(../img/background.jpg);
+
     background-size: cover;
     background-attachment: fixed;
 }
 h2 {
     margin-left: auto !important;
     margin-right: auto !important;
+    font-weight: 100 !important;
+    font-family: 'Roboto', sans-serif;
 }
 select {
     font-size: 1em;
@@ -28,14 +31,15 @@ button {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    width: 50px !important;
 }
 .mdl-button--accent.mdl-button--accent.mdl-button--raised, .mdl-button--accent.mdl-button--accent.mdl-button--fab {
     color: #ffffff !important;
 }
 .centerWp {
     width: 40px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: auto !important;
+    margin-right: auto !important;
 }
 header {
     margin-left: auto;
@@ -71,11 +75,13 @@ i {
     color: #000 !important;
 }
 .mdl-navigation a {
-    color: #fff;
+    color: #000;
     text-decoration: none;
     padding-left: 10px;
     padding-right: 10px;
-    font-size: 1.4em;
+    font-size: 1.2em;
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
 }
 .mdl-navigation li {
     color: #fff;
