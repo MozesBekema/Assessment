@@ -21,6 +21,7 @@
                 </div>
             <form action="" method="post">
                 <?php echo "U heeft <b>".$_SESSION['leerling']."</b> beoordeeld, wilt u dit versturen?" ?><br/></br>
+                <?php echo $_SESSION['leerling'] ?><br/></br>
                 <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Verstuur</button>
             </form>
         </div>
