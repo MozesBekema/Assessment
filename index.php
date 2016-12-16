@@ -15,7 +15,7 @@
         $username = filter_var($username, FILTER_SANITIZE_STRING);
         $password = filter_var($password, FILTER_SANITIZE_STRING);
 
-        $query = $conn->prepare("SELECT id, username, roles_id, name FROM `accounts` WHERE `username` = :username AND `password` = :password");
+        $query = $conn->prepare("SELECT username, roles_id, name FROM `accounts` WHERE `username` = :username AND `password` = :password");
         $query->execute(array('username' => $username, 'password' => $password));
 
         $row = $query->fetch(PDO::FETCH_ASSOC);
@@ -50,7 +50,7 @@
                             <input type="text" class="mdl-textfield__input" name="username" required autocomplete="off">
                             <label class="mdl-textfield__label">Gebruikersnaam</label>
                         </div>
-                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="margin-top:-20px;">
                             <input type="password" class="mdl-textfield__input" name="password" required autocomplete="off">
                             <label class="mdl-textfield__label">Wachtwoord</label>
                         </div>
@@ -66,7 +66,7 @@
                     }
                     ?>
                     <div class="mdl-card__actions mdl-card--border">
-                        <button class="mdl-button homeButton mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" type="submit" name="submit" value="Login">Login</button>
+                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" type="submit" name="submit" value="Login" style="margin-left:216px;color:#fff;">Login</button>
                     </div>
                     </form>
                 </div>

@@ -9,8 +9,9 @@
     $_SESSION['werkprocessen'] = array();
     // loop over werkprocessen
     foreach($_POST as $key=>$value){
-		if(substr($key, 0, 6) == "wp_id_"){
-            array_push($_SESSION['werkprocessen'], $value);
+        if($value == "on"){
+            $name = substr($key, 2);
+            array_push($_SESSION['werkprocessen'], $name);
         }
     }
 ?>
@@ -29,9 +30,7 @@
                         <?php
                             while($row = $leerling->fetch(PDO::FETCH_ASSOC)){
                         ?>
-                        <option value="<?php
-									   	echo ($row['name']);
-									   ?>" type="checkbox">
+                        <option name="<?php echo ($row['id']);?>" type="checkbox">
                             <?php echo ($row['name']);?>
                         </option>
                         <?php

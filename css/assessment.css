@@ -1,7 +1,7 @@
 body {
     margin: 0 auto;
     font-family: 'Roboto', sans-serif;
-/*    background-image: url(../img/background.jpg);*/
+    background-image: url(../img/background.jpg);
     background-size: cover;
 }
 h2 {
@@ -16,11 +16,17 @@ button {
     font-size: 1.1em;
     color: #ffffff;
 }
+
 .mdl-button {
     color: #ffffff;
 }
 .mdl-checkbox__label {
-    float:right;
+    float: left;
+}
+.mdl-checkbox {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 header {
     padding-top: 10px;
@@ -61,11 +67,6 @@ select {
     display: block !important;
     margin-left: auto !important;
     margin-right: auto !important;
-    margin-top:-20px !important;
-}
-.homeButton {
-    margin-left:216px !important;
-    color:#fff !important;
 }
 .card-wide {
     margin-left: auto;
@@ -74,7 +75,6 @@ select {
 .card-wide h2 {
     margin-left: auto;
     margin-right: auto;
-    font-size: 3em;
 }
 @media screen and (max-width: 1024px) {
     .mdl-layout__header {
@@ -100,6 +100,6 @@ select {
         font-size: 1.2em;
     }
     .card-wide h2 {
-        font-size: 2.5em;
+        font-size: 0.9em;
     }
 }
