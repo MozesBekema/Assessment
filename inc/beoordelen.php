@@ -5,6 +5,8 @@
     $klas = $conn->prepare("SELECT klas_name, id FROM `klas` WHERE id = :id");
     $klas->execute(array('id' => $_SESSION['klassen']));
     $row = $klas->fetch(PDO::FETCH_ASSOC);
+
+    $_SESSION['leerling'] = $_POST['Leerling'];
 ?>
 <!DOCTYPE html>
 <html>
