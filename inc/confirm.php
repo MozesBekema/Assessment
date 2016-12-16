@@ -1,5 +1,5 @@
 <?php
-//    var_dump($_POST);
+    var_dump($_POST);
     include("logincheck.php");
 
     include("connect.php");
@@ -11,6 +11,7 @@
     <?php include("menu.php"); ?>
     <header>
             <form action="" method="post">
+
                 <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Verstuur</button>
             </form>
     </header>

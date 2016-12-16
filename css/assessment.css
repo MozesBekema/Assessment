@@ -27,6 +27,9 @@ button {
     margin-left: auto;
     margin-right: auto;
 }
+.mdl-button--accent.mdl-button--accent.mdl-button--raised, .mdl-button--accent.mdl-button--accent.mdl-button--fab {
+    color: #ffffff !important;
+}
 .centerWp {
     width: 40px;
     margin-left: auto;
