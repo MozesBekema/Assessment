@@ -98,7 +98,7 @@ i {
     margin-right: auto;
 }
 .mdl-layout__header-row {
-    padding-right: 0 !important;
+    padding-right: 8px !important;
 }
 @media screen and (max-width: 1024px) {
     .mdl-layout__header {
