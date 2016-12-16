@@ -1,7 +1,9 @@
 body {
     margin: 0 auto;
     font-family: 'Roboto', sans-serif;
+    background-image: url(../img/background.jpg);
     background-size: cover;
+    background-attachment: fixed;
 }
 h2 {
     margin-left: auto !important;
@@ -54,15 +56,26 @@ form {
 select {
     height: 35px;
 }
+i {
+    color: #fff;
+}
+.mdl-menu__item {
+    color: #000 !important;
+    font-size: 1.2em !important;
+}
+.mdl-menu__item a {
+    font-size: 1.2em !important;
+    color: #000;
+}
+.mdl-menu__container.is-visible .mdl-menu__item {
+    color: #000 !important;
+}
 .mdl-navigation a {
     color: #fff;
     text-decoration: none;
     padding-left: 10px;
     padding-right: 10px;
     font-size: 1.4em;
-}
-.mdl-navigation a:hover {
-    color:rgb(255,64,129);
 }
 .mdl-navigation li {
     color: #fff;
@@ -83,6 +96,9 @@ select {
 .card-wide h2 {
     margin-left: auto;
     margin-right: auto;
+}
+.mdl-layout__header-row {
+    padding-right: 0 !important;
 }
 @media screen and (max-width: 1024px) {
     .mdl-layout__header {

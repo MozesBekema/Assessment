@@ -16,7 +16,6 @@
                     <h2>Werkprocessen</h2>
                 </div>
                 <form action="leerling.php" method="post" id="required">
-                    <div class="centerWp">
                         <?php
                             while($row = $wp->fetch(PDO::FETCH_ASSOC)){
                         ?>
@@ -28,7 +27,6 @@
                         <?php
                             }
                         ?>
-                    </div>
                     <br/>
                 <?php include("button.php")?>
                 </form>

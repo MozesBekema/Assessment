@@ -10,8 +10,16 @@
             <!-- Navigation -->
             <nav class="mdl-navigation">
                 <li><?php echo "Hallo, ".$_SESSION['login_user']['name'] ?></li>
-                <a href="../index.php?action=logout">Log out</a>
-            </nav>
+                <!-- Right aligned menu below button -->
+                <button id="demo-menu-lower-right" class="mdl-button mdl-js-button mdl-button--icon">
+                    <i class="material-icons">more_vert</i>
+                </button>
+                <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="demo-menu-lower-right">
+                    <li class="mdl-menu__item">Some Action</li>
+                    <li class="mdl-menu__item">Another Action</li>
 
+                    <li class="mdl-menu__item"><a href="../index.php?action=logout">Log out</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
