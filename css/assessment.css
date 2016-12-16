@@ -1,7 +1,6 @@
 body {
     margin: 0 auto;
     font-family: 'Roboto', sans-serif;
-    background-image: url(../img/background.jpg);
     background-size: cover;
 }
 h2 {
@@ -28,8 +27,14 @@ button {
     margin-left: auto;
     margin-right: auto;
 }
+.centerWp {
+    width: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
 header {
-    padding-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
 }
 input {
     font-size: 1.1em;
@@ -81,7 +86,7 @@ select {
         display: block !important;
     }
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 650px) {
     .mdl-layout-title {
         display: none !important;
     }
@@ -100,6 +105,6 @@ select {
         font-size: 1.2em;
     }
     .card-wide h2 {
-        font-size: 0.9em;
+        font-size: 2.34747em;
     }
 }

@@ -16,7 +16,7 @@
                     <h2>Werkprocessen</h2>
                 </div>
                 <form action="leerling.php" method="post" id="required">
-                        <div style="padding-left:44%;">
+                    <div class="centerWp">
                         <?php
                             while($row = $wp->fetch(PDO::FETCH_ASSOC)){
                         ?>
@@ -29,7 +29,7 @@
                             }
                         ?>
                     </div>
-                        <br/>
+                    <br/>
                 <?php include("button.php")?>
                 </form>
                 <br/>
