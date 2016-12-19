@@ -2,7 +2,7 @@
     include("logincheck.php");
     include("connect.php");
 
-    $opleidingen = $conn->prepare("SELECT opleiding_name, id FROM `opleidingen` ORDER BY id");
+    $opleidingen = $conn->prepare("SELECT opleiding_name, id FROM `opleidingen` ORDER BY opleiding_name");
     $opleidingen->execute();
 ?>
 
