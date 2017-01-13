@@ -26,6 +26,8 @@ button {
 }
 .mdl-checkbox__label {
     float: left;
+    text-align: left;
+    width: 200px;
 }
 .mdl-checkbox {
     text-align: center;
