@@ -36,10 +36,8 @@ button {
 .mdl-button--accent.mdl-button--accent.mdl-button--raised, .mdl-button--accent.mdl-button--accent.mdl-button--fab {
     color: #ffffff !important;
 }
-.centerWp {
-    width: 40px;
-    margin-left: auto !important;
-    margin-right: auto !important;
+.notCentered {
+    margin-left: 30px;
 }
 header {
     margin-left: auto;
@@ -53,9 +51,6 @@ textarea:focus, input:focus{
 }
 *:focus {
     outline: none;
-}
-form {
-    text-align: center;
 }
 select {
     height: 35px;
