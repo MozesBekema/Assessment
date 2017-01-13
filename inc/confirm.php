@@ -1,8 +1,6 @@
 <?php
-    //var_dump($_POST);
 
     include("logincheck.php");
-//
     include("connect.php");
 
     $_SESSION['beoordeling'] = $_POST;
