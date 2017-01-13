@@ -5,7 +5,6 @@
 
     $_SESSION['beoordeling'] = $_POST;
 
-    var_dump($_SESSION);
 ?>
 <!DOCTYPE html>
 <html>

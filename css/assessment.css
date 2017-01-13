@@ -95,6 +95,8 @@ i {
 .card-wide {
     margin-left: auto;
     margin-right: auto;
+    padding: 15px;
+    width: 500px !important;
 }
 .card-wide h2 {
     margin-left: auto;

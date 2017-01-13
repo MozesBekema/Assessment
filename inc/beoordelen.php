@@ -1,6 +1,5 @@
 <?php
     include("logincheck.php");
-//    var_dump($_SESSION);
     include("connect.php");
     $klas = $conn->prepare("SELECT klas_name, id FROM `klas` WHERE id = :id");
     $klas->execute(array('id' => $_SESSION['klassen']));
