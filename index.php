@@ -1,4 +1,4 @@
-    <?php session_start();
+<?php session_start();
     include("inc/connect.php");
 
     $errorLog = 0;
@@ -31,47 +31,57 @@
 ?>
     <!DOCTYPE html>
     <html>
-        <head>
-            <link href="css/assessment.css" rel="stylesheet" type="text/css" />
-        </head>
-        <?php include("inc/head.php"); ?>
-    <body>
-        <header>
-            <div class="card-wide mdl-card mdl-shadow--2dp">
-                <div class="mdl-card__title">
-                    <h2 class="mdl-card__title-text">Assessment Beoordeling GLU</h2>
+
+    <head>
+        <link href="css/assessment.css" rel="stylesheet" type="text/css" /> </head>
+    <?php include("inc/head.php"); ?>
+
+        <body>
+            <header class="mdl-layout__header">
+                <div class="mdl-layout__header-row">
+                    <!-- Title --><img src="img/glu.png" draggable="false"> <span class="mdl-layout-title" style="color:#ffffff;">GLU Assessment Beoordelings Applicatie</span>
+                    <!-- Add spacer, to align navigation to the right -->
+                    <div class="mdl-layout-spacer"></div>
+                    <!-- Navigation -->
+                    <nav class="mdl-navigation">
+                    </nav>
                 </div>
-                <div class="mdl-card__supporting-text">
-                    <?php
+            </header>
+            <header>
+                <div class="card-wide mdl-card mdl-shadow--2dp">
+                    <div class="mdl-card__title">
+                        <h2 class="mdl-card__title-text">Assessment Beoordeling GLU</h2> </div>
+                    <div class="mdl-card__supporting-text">
+                        <?php
                         if(!isset($_SESSION['login_user'])){
                     ?>
-                    <form action="index.php" method="POST">
-                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                            <input type="text" class="mdl-textfield__input" name="username" required autocomplete="off">
-                            <label class="mdl-textfield__label">Gebruikersnaam</label>
-                        </div>
-                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="margin-top:-20px;">
-                            <input type="password" class="mdl-textfield__input" name="password" required autocomplete="off">
-                            <label class="mdl-textfield__label">Wachtwoord</label>
-                        </div>
-                    <?php
+                            <form action="index.php" method="POST">
+                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                    <input type="text" class="mdl-textfield__input" name="username" required autocomplete="off">
+                                    <label class="mdl-textfield__label">Gebruikersnaam</label>
+                                </div>
+                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="margin-top:-20px;">
+                                    <input type="password" class="mdl-textfield__input" name="password" required autocomplete="off">
+                                    <label class="mdl-textfield__label">Wachtwoord</label>
+                                </div>
+                                <?php
                         if ($errorLog == 1){
                             echo "<p>Verkeerde gebruikersnaam of wachtwoord, probeer het opnieuw</p>";
                         }
                     ?>
-                    <?php
+                                    <?php
                     }
                     else{
                         header("Location:inc/opleiding.php");
                     }
                     ?>
-                    <div class="mdl-card__actions mdl-card--border">
-                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" type="submit" name="submit" value="Login" style="margin-left:216px;color:#fff;">Login</button>
+                                        <div class="mdl-card__actions mdl-card--border">
+                                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" type="submit" name="submit" value="Login" style="margin-left:216px;color:#fff;">Login</button>
+                                        </div>
+                            </form>
                     </div>
-                    </form>
                 </div>
-            </div>
-        </header>
-    </body>
+            </header>
+        </body>
 
     </html>

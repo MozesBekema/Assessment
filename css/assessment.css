@@ -107,6 +107,12 @@ i {
 }
 .mdl-layout__header-row {
     padding-right: 8px !important;
+    padding-left: 15px !important;
+}
+.mdl-layout__header-row img {
+    width: 60px;
+    height: 50px;
+    margin-right: 10px;
 }
 @media screen and (max-width: 1024px) {
     .mdl-layout__header {
@@ -119,6 +125,10 @@ i {
     }
     .mdl-layout__header-row {
         padding: 0 !important;
+    }
+    .mdl-layout__header-row {
+        padding-right: 8px !important;
+        padding-left: 15px !important;
     }
     .mdl-card {
         width: 100% !important;
