@@ -1,4 +1,4 @@
-l<?php session_start();
+    <?php session_start();
     include("inc/connect.php");
 
     $errorLog = 0;
@@ -15,7 +15,7 @@ l<?php session_start();
         $username = filter_var($username, FILTER_SANITIZE_STRING);
         $password = filter_var($password, FILTER_SANITIZE_STRING);
 
-        $query = $conn->prepare("SELECT username, roles_id, name FROM `accounts` WHERE `username` = :username AND `password` = :password");
+        $query = $conn->prepare("SELECT username, id, roles_id, name FROM `accounts` WHERE `username` = :username AND `password` = :password");
         $query->execute(array('username' => $username, 'password' => $password));
 
         $row = $query->fetch(PDO::FETCH_ASSOC);

@@ -17,7 +17,7 @@
                 <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="demo-menu-lower-right">
                     <li class="mdl-menu__item"><a href="opties.php">Opties</a></li>
 
-                    <li class="mdl-menu__item"><a href="../index.php?action=logout">Log out</a></li>
+                    <li class="mdl-menu__item"><a href="../index.php?action=logout">Uitloggen</a></li>
                 </ul>
             </nav>
         </div>

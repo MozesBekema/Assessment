@@ -1,6 +1,5 @@
 <?php
     include("logincheck.php");
-//    var_dump($_SESSION);
     include("connect.php");
 
     $leerling = $conn->prepare("SELECT name, id, klas_id FROM `leerlingen` WHERE klas_id = :klas_id ORDER BY id");
@@ -10,8 +9,8 @@
     // loop over werkprocessen
     foreach($_POST as $key=>$value){
         if($value == "on"){
-            $name = substr($key, 2);
-            array_push($_SESSION['werkprocessen'], $name);
+            $wpid= substr($key, 2);
+            array_push($_SESSION['werkprocessen'], $wpid);
         }
     }
 ?>
@@ -26,11 +25,11 @@
                     <h2>Leerling</h2>
                 </div>
                 <form action="beoordelen.php" method="post">
-                    <select name="Leerling">
+                    <select name="leerling">
                         <?php
                             while($row = $leerling->fetch(PDO::FETCH_ASSOC)){
                         ?>
-                        <option name="<?php echo ($row['id']);?>" type="checkbox">
+                        <option value="<?php echo ($row['id']);?>" type="checkbox">
                             <?php echo ($row['name']);?>
                         </option>
                         <?php

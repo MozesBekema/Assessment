@@ -20,7 +20,7 @@
                             while($row = $wp->fetch(PDO::FETCH_ASSOC)){
                         ?>
                         <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                            <input type="checkbox" class="mdl-checkbox__input" name="wp<?php echo str_replace(".","_",$row['wp_name']);?>">
+                            <input type="checkbox" class="mdl-checkbox__input" name="wp<?php echo $row['id'];?>">
                             <span class="mdl-checkbox__label"><?php echo ($row['wp_name']);?></span>
                         </label><br/>
 
